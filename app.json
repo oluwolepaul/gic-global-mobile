@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "GIC Global Connect",
+    "slug": "gic-global",
+    "icon": "./assets/app-icon.png",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/app-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#061a35"
+        }
+      ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.example.gicportfolio",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#061a35"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

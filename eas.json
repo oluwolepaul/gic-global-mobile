@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 27.5.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_SERMONS_API_URL": "https://sermon-api.vercel.app/api/sermons",
+        "EXPO_PUBLIC_CONTENT_API_URL": "https://sermon-api.vercel.app/api/content"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6831802271"
+      }
+    }
+  }
+}

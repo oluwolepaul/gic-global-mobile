@@ -1,0 +1,16 @@
+{
+  "name": "gic-content-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.22.0",
+    "styled-components": "^6.6.0"
+  }
+}
