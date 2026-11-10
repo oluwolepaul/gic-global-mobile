@@ -1,0 +1,12 @@
+{
+  "archives": [
+    {
+      "sha256": "e9c2f34150ccda36dbd7e605ec0843b5e8d354f60353db858dade9341fa37834",
+      "file": "source-part-1.zip"
+    },
+    {
+      "sha256": "50be9394f6c7bd9243cc6e3bfecd0ee52edfda1f37f7ea3de0cf18584cbef30c",
+      "file": "source-part-2.zip"
+    }
+  ]
+}
