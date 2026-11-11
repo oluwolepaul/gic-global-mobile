@@ -1,5 +1,15 @@
 # GIC Global Mobile
 
+## Try the app
+
+1. Run `npm ci` and `npm run start`. Open a compatible Expo client or development build.
+2. Browse the app shell, campus navigation, and bundled screens before setting up your own APIs. For a browser walkthrough, open `browser-prototype.html` locally.
+3. Copy `.env.example` to `.env` and set the two `EXPO_PUBLIC_` URLs for your own deployment. The app currently falls back to an existing hosted content endpoint when `EXPO_PUBLIC_CONTENT_API_URL` is unset.
+
+## Configure the server
+
+Deploy `sermon-api` separately. Set `YOUTUBE_API_KEY` for `/api/sermons` and `SANITY_PROJECT_ID` and `SANITY_DATASET` for `/api/content`. Keep those values in the server environment. Use the schemas in `content-studio` to set up the content model. The browser prototype and bundled navigation can be reviewed without configuring YouTube or Sanity.
+
 A multi-campus church application connecting visitors with content, messages and community journeys.
 
 **JavaScript · React Native · Expo · WebView · Serverless APIs · Sanity schemas**
@@ -21,21 +31,3 @@ Expo mobile interface → serverless content/sermon endpoints → public content
 
 - `App.js` — application screens and state
 - `sermon-api/api/sermons.js` — sermon feed endpoint
-- `sermon-api/api/content.js` — content endpoint
-- `content-studio/schemas/` — content models
-
-## Run locally
-
-Run `npm ci`, then `npm run start`. Copy `.env.example` to a local `.env` and configure your own public endpoint URLs. Deploy `sermon-api` separately and set `YOUTUBE_API_KEY` only on the server. Configure your own Sanity project/dataset for the content studio. Use your own application identifiers and EAS project when building for distribution.
-
-## Status and limitations
-
-The project record reports an iOS build uploaded to App Store Connect for processing. That is not evidence of App Review approval or public App Store availability. This repository is a source snapshot; credentials, signing material and deployment identities are excluded.
-
-## Engineering discussion
-
-This project provides examples of connecting user journeys to data, handling state and failure paths, and working within platform constraints. It was developed with AI-assisted tooling. Features are described from source and project records; unmeasured business outcomes, usage counts and performance claims are intentionally omitted.
-
-## Rights and configuration
-
-Published with the project owner's permission. Brand assets and third-party components retain their respective rights. See any included license and third-party notices. Public visibility does not grant a new license to third-party artwork or content. Runtime credentials and private customer information are not included.
